@@ -71,6 +71,9 @@ $ MethylDackel extract --CHH --noCpG -@ 12  $ref  ${outPrefix}.bis.sort.mDups.ba
 $ MethylDackel extract  -l  Homo_sapiens.GRCh38.dna.primary_assembly.fa.allcpg_parsed.bed -@ 12  $ref  ${outPrefix}.oxbis.sort.mDups.bam 
 $ MethylDackel extract --CHH  --noCpG -@ 12 $ref ${outPrefix}.oxbis.sort.mDups.bam 
 ```
+```bash
+$ sh run.tabulateConversionRate.slurm.sh ${outPrefix}
+```
 
 # 5. Make plots for distributions of coverage for bs and ox + basic QC
 
