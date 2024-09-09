@@ -20,7 +20,7 @@ geneID.mean.num.cov = merge(geneID.mean.num, geneID.numCovered, by= c("geneID"),
 
 
 # read in ensembl genes and merge with that list for ensembl gene names
-geneList = read.table("/projects/wei-lab/refs/h38/primaryAssembly/gencode.ensembl.txt", header=T)
+geneList = read.table("gencode.ensembl.txt", header=T)
 
 df = merge(geneID.mean.num.cov, geneList, by = "geneID")
 colnames(df) = c("geneID", paste0(sample, ".mean"), paste0(sample,".count"), paste0(sample,".nCov"), "chr","start","end","geneName")
