@@ -9,8 +9,8 @@ echo "
 #PBS -m ae
 cd \$PBS_O_WORKDIR
 
-sh /projects/wei-lab/cfDNA/analysis/scripts/tabulateConversionRate.sh $sample.bis.sort.mDups_CHH.bedGraph
-sh /projects/wei-lab/cfDNA/analysis/scripts/tabulateConversionRate.sh $sample.oxbis.sort.mDups_CHH.bedGraph
+sh tabulateConversionRate.sh $sample.bis.sort.mDups_CHH.bedGraph
+sh tabulateConversionRate.sh $sample.oxbis.sort.mDups_CHH.bedGraph
 
 rm $sample.bis.sort.mDups_CHH.bedGraph $sample.oxbis.sort.mDups_CHH.bedGraph
 
